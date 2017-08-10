@@ -1,0 +1,24 @@
+{
+  "name": "book-suggestor",
+  "description": "A task of AngularJS",
+  "main": "",
+  "authors": [
+    "Bilal Shafi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "RESTful"
+  ],
+  "homepage": "https://github.com/bilal945/Should-I-Read-This-Book",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "bootstrap": "3.3.x",
+    "jquery": "2.2.x"
+  }
+}

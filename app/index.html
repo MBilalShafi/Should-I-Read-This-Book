@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="bookSuggestor">
+<head>
+  <meta charset="utf-8">
+  <title>Book Suggestor App</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="app.component.js"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/books/books.module.js"></script>
+  <script src="core/books/books.service.js"></script>
+  <script src="books-list/books-list.module.js"></script>
+  <script src="books-list/books-list.component.js"></script>
+  <script src="book-detail/book-detail.module.js"></script>
+  <script src="book-detail/book-detail.component.js"></script>
+</head>
+<body>
+
+  <div class="view-container">
+      <div ng-view class="view-frame"></div>
+  </div>
+
+</body>
+</html>

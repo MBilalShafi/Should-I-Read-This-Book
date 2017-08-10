@@ -1,0 +1,897 @@
+{
+  "GoodreadsResponse": {
+    "Request": {
+      "authentication": "true",
+      "key": "sw4i4NbVrGCWSoulnijJQ",
+      "method": "search_index"
+    },
+    "search": {
+      "query": "Harry Potter and the Chamber of Secrets",
+      "results-start": "1",
+      "results-end": "18",
+      "total-results": "65",
+      "source": "Goodreads",
+      "query-time-seconds": "0.17",
+      "results": {
+        "work": [
+          {
+            "id": {
+              "-type": "integer",
+              "text": "6231171"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "398"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "1900422"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "34025"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "1998"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "7"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "average_rating": "4.37",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "15881"
+              },
+              "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "1077326"
+                },
+                "name": "J.K. Rowling"
+              },
+              "image_url": "https://images.gr-assets.com/books/1474169725m/15881.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1474169725s/15881.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "498223"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "11"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "29360"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "31"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2003"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "average_rating": "4.61",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "2223324"
+              },
+              "title": "Harry Potter and the Chamber of Secrets: Sheet Music for Flute with C.D",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "616"
+                },
+                "name": "John   Williams"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "10775617"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "100"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "12"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2009"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "12"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "28"
+            },
+            "average_rating": "4.42",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "7799044"
+              },
+              "title": "Harry Potter and the Chamber of Secrets (Film)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "2940867"
+                },
+                "name": "Frederic P.  Miller"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "19076185"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "83"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "5"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2012"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "4.31",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "13517698"
+              },
+              "title": "Mark Reads Harry Potter and the Chamber of Secrets",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "5183642"
+                },
+                "name": "Mark Oshiro"
+              },
+              "image_url": "https://images.gr-assets.com/books/1331509833m/13517698.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1331509833s/13517698.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "56639412"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "19"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "1998"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "7"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "average_rating": "4.47",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "35278515"
+              },
+              "title": "Harry Potter and the Chamber of Secrets",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "16700368"
+                },
+                "name": "J.K.Rowling"
+              },
+              "image_url": "https://images.gr-assets.com/books/1496311583m/35278515.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1496311583s/35278515.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "56560896"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "5.00",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "35219246"
+              },
+              "title": "Harry Potter and the chamber of secrets",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "6707866"
+                },
+                "name": "King"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "56560919"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "5.00",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "35219262"
+              },
+              "title": "Harry Potter and the chamber of secrets",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "16883717"
+                },
+                "name": "Rowling"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "6991985"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "12"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2002"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "4.50",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "6788555"
+              },
+              "title": "Harry Potter and the Chamber of Secrets Piano Selections",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "616"
+                },
+                "name": "John   Williams"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "14924453"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "3"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "9"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2008"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "12"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "3"
+            },
+            "average_rating": "3.67",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "8838558"
+              },
+              "title": "Re-read Harry Potter and the Chamber of Secrets Today",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "16291484"
+                },
+                "name": "Graeme   Davis"
+              },
+              "image_url": "https://images.gr-assets.com/books/1379691077m/8838558.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1379691077s/8838558.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "48443"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "55"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "4"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2002"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "10"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "average_rating": "4.53",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "49525"
+              },
+              "title": "Harry Potter and the Chamber of Secrets: A Magical 3-D Adventure",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "27895"
+                },
+                "name": "Dena Neusner"
+              },
+              "image_url": "https://images.gr-assets.com/books/1328868702m/49525.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1328868702s/49525.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "13567596"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "3"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "25"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2007"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "4.80",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "8695011"
+              },
+              "title": "Harry Potter and the Chamber of Secrets (SparkNotes Literature Guide Series)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "6460726"
+                },
+                "name": "SparkNotes"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "15174250"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2011"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "13"
+            },
+            "average_rating": {
+              "-type": "float",
+              "text": "0.0"
+            },
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "10273719"
+              },
+              "title": "Harry Potter and the Chamber of Secrets: A literary analysis",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "4594733"
+                },
+                "name": "Brandon Peters"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "17798215"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "29"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "4.48",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "1090463"
+              },
+              "title": "Harry Potter and the Chamber of Secrets: Teacher's Guide, with Poster (Scholastic Literature Guides)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "11928"
+                },
+                "name": "Linda Beech"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "57069426"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "17"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": "4.65",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "35622982"
+              },
+              "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "1077326"
+                },
+                "name": "J.K. Rowling"
+              },
+              "image_url": "https://images.gr-assets.com/books/1499527324m/35622982.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1499527324s/35622982.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "15117439"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2011"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "average_rating": {
+              "-type": "float",
+              "text": "0.0"
+            },
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "10217838"
+              },
+              "title": "Shmoop Learning Guide: Harry Potter and the Chamber of Secrets",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "3000965"
+                },
+                "name": "Shmoop"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "1003034"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "2"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2003"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "6"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "average_rating": "5.00",
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "1016910"
+              },
+              "title": "Fawkes the Phoenix (from Harry Potter and the Chamber of Secrets)",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "616"
+                },
+                "name": "John   Williams"
+              },
+              "image_url": "https://images.gr-assets.com/books/1497872902m/1016910.jpg",
+              "small_image_url": "https://images.gr-assets.com/books/1497872902s/1016910.jpg"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "50417443"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "-nil": "true"
+            },
+            "average_rating": {
+              "-type": "float",
+              "text": "0.0"
+            },
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "30008887"
+              },
+              "title": "Harry Potter and the Chamber of Secrets Lesson Plans",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "4819027"
+                },
+                "name": "BookRags"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          },
+          {
+            "id": {
+              "-type": "integer",
+              "text": "41029372"
+            },
+            "books_count": {
+              "-type": "integer",
+              "text": "1"
+            },
+            "ratings_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "text_reviews_count": {
+              "-type": "integer",
+              "text": "0"
+            },
+            "original_publication_year": {
+              "-type": "integer",
+              "text": "2013"
+            },
+            "original_publication_month": {
+              "-type": "integer",
+              "text": "9"
+            },
+            "original_publication_day": {
+              "-type": "integer",
+              "text": "12"
+            },
+            "average_rating": {
+              "-type": "float",
+              "text": "0.0"
+            },
+            "best_book": {
+              "-type": "Book",
+              "id": {
+                "-type": "integer",
+                "text": "21768881"
+              },
+              "title": "Harry Potter and the Chamber of Secrets Study Guide",
+              "author": {
+                "id": {
+                  "-type": "integer",
+                  "text": "7322795"
+                },
+                "name": "P. Eddington"
+              },
+              "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+              "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
