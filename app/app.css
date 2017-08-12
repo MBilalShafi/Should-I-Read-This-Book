@@ -73,5 +73,17 @@ h1 {
 
 .searchTab {
   display: inline-block;
+  width: 100%;
+  
 
+}
+.searchTab input{
+  font-size: 26px;
+  font-family: Consolas, Cambria, Georgia, Times, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
 }

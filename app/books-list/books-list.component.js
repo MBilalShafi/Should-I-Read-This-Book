@@ -9,16 +9,22 @@ angular.
       var self = this;
       //this.books= Books.query();
       //this.books=this.books.GoodreadsResponse.search.results.work;
-      $http.get('books/books-list.json').then(function(response) {
-        self.books = response.data.GoodreadsResponse.search.results.work;
+      //$http.get('books/books-list.json').then(function(response) {
+        //self.books = response.data.GoodreadsResponse.search.results.work;
 
-      });
+      //});
 
       $scope.quer=SharedProperties.getQuery();
       
-      
-      DataService.async($scope.quer).then(function(d) {
-        $scope.data = d;
-      });
+      if ($scope.quer!=null){
+        $scope.msg="User Query: ";
+        DataService.async($scope.quer).then(function(d) {
+          $scope.data = JSON.parse(d);
+          self.books = $scope.data.GoodreadsResponse.search.results.work;
+        });
+      } else {
+        console.log("Null Query Requested!");
+        $scope.msg="Can't Process Empty Query";
+      }
     }
   });
