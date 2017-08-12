@@ -28,17 +28,20 @@
       <!--Body content-->
 
       <ul class="phones">
-        <li ng-repeat="book in $ctrl.books | filter:$ctrl.query" class="thumbnail">
-          <a href="#!/books/{{book.id.text}}" class="thumb phone-thumb">
+        <li ng-repeat="book in $ctrl.booksArr" class="thumbnail">
+          <a ng-href="#!/books/{{book.id.__text}}" class="thumb phone-thumb">
             <img ng-src="{{book.best_book.small_image_url}}" alt="{{book.best_book.title}}" />
           </a>
           <a href="#!/books/{{book.id.text}}">{{book.best_book.title}}</a>
           <p>{{book.best_book.author.name}}</p>
         </li>
       </ul>
+      <div on-scroll-to-bottom="loadData()">
       <p align="center" ng-hide="totalNo==0">
         Showing records <b>1</b> to <b>{{currentNo}}</b> of <b>{{totalNo}}</b> 
       </p>
+      </div>
     </div>
   </div>
+
 </div>

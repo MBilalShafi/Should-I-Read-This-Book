@@ -21,7 +21,7 @@
           <!--a href="#!/books/{{book.id.text}}" class="thumb phone-thumb">
             <img ng-src="{{book.best_book.small_image_url}}" alt="{{book.best_book.title}}" />
           </a-->
-          <a href="#!/books/{{book.id.text}}">{{book.best_book.title}}</a>
+          <a href="#!/books/{{book.id.__text}}">{{book.best_book.title}}</a>
           - {{book.best_book.author.name}}
         </li>
         <li class="thumbnail-one" ng-hide="$ctrl.books == null || $ctrl.books.length == 0">
