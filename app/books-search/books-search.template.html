@@ -4,7 +4,8 @@
       <!--Sidebar content-->
       <center>
       <p class="searchTab">
-        <input placeholder="enter your query" ng-model="$ctrl.query" id="qs" ng-change="$ctrl.updateList()" />
+        <input placeholder="enter your query" ng-model="$ctrl.query" id="qs" ng-change="$ctrl.updateList()" 
+         autocomplete="false"/>
         <input type="button" value="Search" ng-click="$ctrl.deepSearch()" />
       </p>
       <center>
@@ -15,13 +16,16 @@
     <div class="col-md-10">
       <!--Body content-->
 
-      <ul class="phones">
-        <li ng-repeat="book in $ctrl.books" class="thumbnail">
-          <a href="#!/books/{{book.id.text}}" class="thumb phone-thumb">
+      <ul class="books">
+        <li ng-repeat="book in $ctrl.books" class="thumbnail-one">
+          <!--a href="#!/books/{{book.id.text}}" class="thumb phone-thumb">
             <img ng-src="{{book.best_book.small_image_url}}" alt="{{book.best_book.title}}" />
-          </a>
+          </a-->
           <a href="#!/books/{{book.id.text}}">{{book.best_book.title}}</a>
-          <p>{{book.best_book.author.name}}</p>
+          - {{book.best_book.author.name}}
+        </li>
+        <li class="thumbnail-one" ng-hide="$ctrl.books == null || $ctrl.books.length == 0">
+          <a ng-click="$ctrl.deepSearch()">{{$ctrl.totalResults}} more results...</a>
         </li>
       </ul>
 

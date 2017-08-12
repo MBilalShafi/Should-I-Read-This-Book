@@ -13,14 +13,19 @@ angular.
         //self.books = response.data.GoodreadsResponse.search.results.work;
 
       //});
+      self.booksArr=[];
 
       $scope.quer=SharedProperties.getQuery();
-      
+      $scope.currentNo=0;
+      $scope.totalNo=0;
       if ($scope.quer!=null){
-        $scope.msg="User Query: ";
+        $scope.msg="Your Query: ";
         DataService.async($scope.quer).then(function(d) {
           $scope.data = JSON.parse(d);
           self.books = $scope.data.GoodreadsResponse.search.results.work;
+          $scope.totalNo=$scope.data.GoodreadsResponse.search['total-results'];
+          self.bookArr=self.books.slice(0,10);
+          $scope.currentNo=10;
         });
       } else {
         console.log("Null Query Requested!");

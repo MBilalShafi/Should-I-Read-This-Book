@@ -87,3 +87,8 @@ h1 {
 .center-text {
   text-align: center;
 }
+
+.books .thumbnail-one {
+  list-style: none;
+  padding: 10px;
+}
