@@ -1,8 +1,7 @@
 'use strict';
 
 // Define the module
-angular.module('booksList', [
+angular.module('booksSearch', [
     'ngRoute',
     'core'
-
 ]);
