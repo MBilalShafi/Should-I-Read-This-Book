@@ -19,7 +19,7 @@ angular.
           _book=bookArray;
         },
 
-        getBookArray: function(bookArray){
+        getBookArray: function(){
           return _book;
         }
     }

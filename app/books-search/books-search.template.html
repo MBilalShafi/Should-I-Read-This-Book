@@ -1,10 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2">&nbsp;
+    </div>
+    <div class="col-md-8">
       <!--Sidebar content-->
       <center>
       <p class="searchTab">
-        <input placeholder="enter your query" ng-model="$ctrl.query" id="qs" ng-change="$ctrl.updateList()" 
+        <input placeholder="some cool book name..." ng-model="$ctrl.query" id="qs" ng-change="$ctrl.updateList()" ng-model-options="{debounce: 500}"
          autocomplete="false"/>
         <input type="button" value="Search" ng-click="$ctrl.deepSearch()" />
       </p>
@@ -12,8 +14,11 @@
       
 
     </div>
-    
-    <div class="col-md-10">
+    <div class="col-md-2">&nbsp;
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <!--Body content-->
 
       <ul class="books">
@@ -21,7 +26,7 @@
           <!--a href="#!/books/{{book.id.text}}" class="thumb phone-thumb">
             <img ng-src="{{book.best_book.small_image_url}}" alt="{{book.best_book.title}}" />
           </a-->
-          <a href="#!/books/{{book.id.__text}}">{{book.best_book.title}}</a>
+          <a ng-click="saveBookData(book.id.__text)">{{book.best_book.title}}</a>
           - {{book.best_book.author.name}}
         </li>
         <li class="thumbnail-one" ng-hide="$ctrl.books == null || $ctrl.books.length == 0">

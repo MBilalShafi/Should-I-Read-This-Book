@@ -5,7 +5,7 @@ angular.
   module('booksList').
   component('booksList', {
     templateUrl: 'books-list/books-list.template.html',
-    controller: function BooksListController($http, $scope, SharedProperties, DataService) {
+    controller: function BooksListController($http, $scope, $location, SharedProperties, DataService) {
       var self = this;
       //this.books= Books.query();
       //this.books=this.books.GoodreadsResponse.search.results.work;
@@ -31,18 +31,43 @@ angular.
           self.booksArr=self.books.slice(0,10);
           $scope.currentNo=10;
           self.pageOneRecvd=true;
+          console.log(self.books);
           if($scope.currentNo>$scope.totalNo) $scope.currentNo=$scope.totalNo;
         });
       } else {
         console.log("Null Query Requested!");
         $scope.msg="Can't Process Empty Query";
       }
+
+      self.goBack = function goBack(){
+        $location.path('/');
+      }
+
+      $scope.saveBookData = function saveBookData(book_id){
+        console.log("book_id: " + book_id);
+        // find data in $books array
+        var tempArr=self.booksArr;
+        tempArr.forEach(function(element, index) {
+          console.log(element.id.__text +" != "+ book_id);
+          if(element.id.__text==book_id){
+            // found id, get out of the loop
+            SharedProperties.setBookArray(element);
+            console.log(element.id.__text +" == "+ book_id);
+
+            $location.path("/books/detail/");
+          }
+        }, this);
+
+
+      }
+
+
       $scope.loadData = function loadData(){ // this function will be called on scroll down
         if($scope.currentNo>$scope.totalNo) $scope.currentNo=$scope.totalNo;
         if($scope.currentNo<$scope.totalNo && self.pageOneRecvd && !self.inRecvMode){
           //alert("Scroll to Bottom detected");
           
-          console.log(self.page);
+          //console.log(self.page);
           if(self.page++%2==0 /* pick data if page is even number (bacuse data is picked 20 per page means 2 pages are picked once) */)
           {
             self.inRecvMode=true;
@@ -62,7 +87,7 @@ angular.
             });
           } else { // load data from previous array
             if (self.books.length==20){
-              console.log('In here');
+              //console.log('In here');
               
               self.booksArr=self.booksArr.concat(self.books.slice(10,20));
               $scope.currentNo+=20;
@@ -72,7 +97,7 @@ angular.
             }
           }
           
-          console.log(self.booksArr);
+          //console.log(self.booksArr);
         }
       }
       

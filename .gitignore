@@ -1,5 +1,6 @@
 api.txt
 node_modules/
 bower_components/
+app/bower_components/
 logs/*
 !.gitkeep
