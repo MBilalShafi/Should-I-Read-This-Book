@@ -1,39 +1,24 @@
 <div class="container-fluid">
+
   <div class="row">
     <div class="col-md-12">
       <h2 ng-model="quer" class="center-text">{{msg}} {{quer}}</h2>
       <p align="center" ng-hide="totalNo==0">
         Showing records <b>1</b> to <b>{{currentNo}}</b> of <b>{{totalNo}}</b> <br/>
-        
-        
       </p>
       <p align="center">
         <a ng-click="$ctrl.goBack()">Go Back</a>
       </p>
     </div>
-
   </div>
+
+
   <div class="row">
-    <!--Sidebar content
-    <div class="col-md-2">
-      
-
-      <p class="searchTab">
-        <input ng-model="$ctrl.query" />
-        <input type="button" value="Search" ng-click="$ctrl.deepSearch()" />
-      </p>
-
-         
-      
-
-    </div>
-    --> 
+    
     <div class="col-md-12">
-      <!--Body content-->
 
       <ul class="phones">
         <li ng-repeat="book in $ctrl.booksArr" class="thumbnail">
-          <!--a ng-href="#!/books/{{book.id.__text}}" class="thumb phone-thumb"-->
           <a ng-click="saveBookData(book.id.__text)" class="thumb phone-thumb">
             <img ng-src="{{book.best_book.small_image_url}}" alt="{{book.best_book.title}}" />
           </a>

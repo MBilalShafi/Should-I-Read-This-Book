@@ -1,4 +1,4 @@
 'use strict';
 
-// Define the `core.phone` module
-angular.module('core.books', ['ngResource']);
+// Define the `core.books` module
+angular.module('core.books');

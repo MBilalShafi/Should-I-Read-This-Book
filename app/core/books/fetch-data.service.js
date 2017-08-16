@@ -3,9 +3,9 @@
 angular.module('core.books').
 
 // this service will fetch books data from server and pass on to XML2Json
-// service and get JSON response and return back to the requesting component
+// module and get JSON response and return back to the requesting component
 
-factory('DataService', function($http, SharedProperties) {
+factory('DataService', function($http) {
   var DataService = {
     async: function(quer,page=1) {
       // $http returns a promise, which has a then function, which also returns a promise

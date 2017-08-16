@@ -1,5 +1,5 @@
 angular
-    .module('bookSuggestor')
-        .component('bookSuggestor', {
-
-        });
+.module('bookSuggestor')
+.component('bookSuggestor', {
+    // nothing here yet
+});
