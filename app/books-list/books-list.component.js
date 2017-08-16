@@ -4,7 +4,7 @@ angular.
 module('booksList').
 component('booksList', {
   templateUrl: 'books-list/books-list.template.html',
-  controller: function BooksListController($scope, $location, SharedProperties, DataService) {
+  controller: function BooksListController($http, $scope, $location, SharedProperties, DataService) {
     
     var self = this; // create an instance to the controller function
     
@@ -26,8 +26,8 @@ component('booksList', {
         $scope.data = JSON.parse(d);
         self.books = $scope.data.GoodreadsResponse.search.results.work;
         $scope.totalNo=$scope.data.GoodreadsResponse.search['total-results'];
-        self.booksArr=self.books.slice(0,10);
-        $scope.currentNo=10;
+        self.booksArr=self.books;
+        $scope.currentNo+=self.books.length;
         self.pageOneRecvd=true;
         console.log(self.books);
         if($scope.currentNo>$scope.totalNo) $scope.currentNo=$scope.totalNo;
@@ -46,7 +46,7 @@ component('booksList', {
       // This function stores JSON object of selected book in SharedProperties so that book-detail component may access it
       // It then routes to <book-detail/> component which fetches data from SharedProperties and displays details
 
-      self.books.forEach(function(element, index) {
+      self.booksArr.forEach(function(element, index) {
         if(element.id.__text==book_id){
           // found id, get out of the loop
           SharedProperties.setBookArray(element);
@@ -61,38 +61,27 @@ component('booksList', {
       
       // This function will be called on scroll down if page 1 is already loaded
 
-      if($scope.currentNo>$scope.totalNo) $scope.currentNo=$scope.totalNo;
+      
 
       if($scope.currentNo<$scope.totalNo && self.pageOneRecvd && !self.inRecvMode){
-        
-        if(self.page++%2==0 /* pick data if page is even number (bacuse data is picked 20 per page means 2 pages are picked once) */)
-        {
-          self.inRecvMode=true;
-          DataService.async($scope.quer, self.page).then(function(d) {
-            $scope.data = JSON.parse(d);
-            self.books = $scope.data.GoodreadsResponse.search.results.work;
-            if (self.books.length>10){
-              self.booksArr=self.booksArr.concat(self.books.slice(0,10));
-              $scope.currentNo+=20;
-            } else {
-              self.booksArr=self.booksArr.concat(self.books.slice(0,self.books.length));
-              $scope.currentNo+=self.books.length;
-            }
-            self.inRecvMode=false;
-          });
+       
+        console.log("Page: "+ self.page);
+        self.inRecvMode=true;
+        DataService.async($scope.quer, self.page).then(function(d) {
+          $scope.data = JSON.parse(d);
+          self.books = $scope.data.GoodreadsResponse.search.results.work;
+          if (self.books){
+            self.booksArr=self.booksArr.concat(self.books);
+            $scope.currentNo+=self.books.length;
+          }
+          self.inRecvMode=false;
+        });
 
-        } else { // load data from previous page
-
-          if (self.books.length==20){ // a full page
-            self.booksArr=self.booksArr.concat(self.books.slice(10,20));
-            $scope.currentNo+=20;
-          } else { // last page which includes less than 20 books
-            self.booksArr=self.booksArr.concat(self.books.slice(10,self.books.length));
-            $scope.currentNo+=self.books.length-10;
-          } // if (self.books.length==20) ends
-
-        } // if(self.page++%2==0) ends
+        self.page++;
       } // if($scope.currentNo<$scope.totalNo ... ends
+
+
+      if($scope.currentNo>$scope.totalNo) $scope.currentNo=$scope.totalNo;
     } // $scope.loadData() ends
       
     

@@ -5,7 +5,7 @@ module('booksSearch').
 component('booksSearch' /* Component for Fast Searching Books */, {
   
   templateUrl: 'books-search/books-search.template.html',
-  controller: function BooksSearchController($scope, $location, SharedProperties, DataService) {
+  controller: function BooksSearchController($http, $scope, $location, SharedProperties, DataService) {
 
     var self = this; // create an instance to the controller function
     
@@ -22,7 +22,7 @@ component('booksSearch' /* Component for Fast Searching Books */, {
       //$scope.query = angular.element(document.getElementById("qs")).val();
       
       if(self.query!=null){
-        SharedProperties.setQuery($scope.query);
+        SharedProperties.setQuery(self.query);
         $location.path("/books");
       }
 

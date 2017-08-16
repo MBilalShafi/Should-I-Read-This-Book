@@ -27,6 +27,9 @@
         </li>
       </ul>
       <div on-scroll-to-bottom="loadData()">
+      <p align="center" ng-show="$ctrl.inRecvMode">
+        <img src="/books-list/ajax-loader.gif" />
+      </p>
       <p align="center" ng-hide="totalNo==0">
         Showing records <b>1</b> to <b>{{currentNo}}</b> of <b>{{totalNo}}</b> 
       </p>
